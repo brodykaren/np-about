@@ -1,0 +1,269 @@
+// @import "./variables.less";
+
+@nutrigreen: #ACBF17;
+@nutrismoke: #2D3540;
+@nutriwhite: #FFF;
+@secondarygreen: #736B02;
+@secondarygold: #F2B705;
+@secondaryinfo: #BF9169;
+
+/* Fonts */
+/* The Afrah font is used for main page headings (H1) */
+@font-face {
+    font-family: 'afrah';
+    src: url('fonts/afrah/Afrah-Regular.eot');
+    src: url('fonts/afrah/Afrah-Regular.ttf') format('truetype'),
+        url('fonts/afrah/Afrah-Regular.woff') format('woff'),
+        url('fonts/afrah/Afrah-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* The Telegraf font is used for sub-headings (H2) */
+@font-face {
+    font-family: 'telegraf';
+    src: url('fonts/telegraf/PPTelegraf-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Reset Styles */
+
+* {
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+
+
+@charset "UTF-8";
+/**********
+Universal Styles
+**********/
+header,
+nav,
+aside,
+article,
+footer,
+section,
+main,
+figure,
+figcaption {
+    display: block;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+  
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+html,body {
+    height: 100%;
+    margin: auto;
+  }
+
+
+
+
+  html {
+
+    background: url(images/about-img.png) no-repeat at center center fixed;
+    -webkit-background-size:cover !important;
+    -moz-background-size: cover;
+    -o-obackground-size:cover;
+    background-size: cover;
+  }
+
+
+
+  header {
+    height: 100px;
+    width: 100%;
+    #nav {
+        font-family: 'Open Sans', sans-serif;
+        color:@nutriwhite;
+        .nav-link {
+            display: inline-block;
+            color: @nutriwhite;
+            text-decoration: none;
+            font-size: 2em;
+            background-color:@nutrismoke;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#body {
+
+  background-color:#2D3540!important;
+  font-style:@nutriwhite;
+  font-size:36px;
+  text-align: right;
+  overflow-x: hidden;
+  
+  
+
+  }
+  
+ 
+
+/*--text-box--*/
+
+
+
+/* Container holding the image and the text */
+#view, #background-img {
+  height: 100% !important;
+  width: 100% ;
+  background-image: 100% 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+#btn-a-lg {
+  background-color:@secondaryinfo !important;
+  color:@nutriwhite;
+  border-radius: 10px;
+  font-weight: 500;
+  width: 20%;
+  height: 38px;
+  text-transform:uppercase;
+  font-size: 15px;
+}
+
+.text-block, .h1 {
+ 
+  font-family:"Afrah";
+  font-size: 20px;
+  
+ 
+}
+
+.text-block, .p {
+
+
+font-family: "telegrah";
+font-size: 24px;
+
+
+}
+
+
+
+.h1-a {
+
+
+  font-family: "Afrah";
+  font-size: 86px;
+ 
+}
+
+
+
+#view {
+
+  position: relative;
+}
+
+/* Bottom right text */
+
+
+
+#section {
+  position: relative;
+  
+  
+
+}
+
+/* Bottom right text */
+#text-block {
+  position: absolute;
+  bottom:500px;
+  right: 20px;
+  background-color:transparent;
+  color:@nutriwhite;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2;
+  font-family: "telegraph";
+
+  
+}
+
+
+
+
+ 
+
+
+ 
